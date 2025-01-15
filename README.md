@@ -1,56 +1,80 @@
+## Overview
+**GenSolve** is a machine learning project aimed at providing personalized exercise recommendations based on genetic and symptomatic data. By leveraging LSTM models, the project identifies the best exercises tailored to an individual's genetic predispositions and physical conditions.
 
-## Scripts
-### 1. `preeprocess.py`
-This script handles data preprocessing tasks, including:
-- Encoding symptoms, genetic data, and exercise information.
-- Cleaning and formatting the data to ensure consistency.
-- Preparing the data for training by creating necessary features.
+This repository contains scripts, datasets, and instructions for preprocessing data, training the predictive model, and evaluating its performance. The system integrates information on genetic disorders, associated symptoms, and their effects on physical fitness to provide effective exercise suggestions.
 
-### 2. `train.py`
-This script is responsible for training the predictive model. It includes:
-- Loading the preprocessed data.
-- Building an LSTM model for predicting suitable exercises based on genetic information.
-- Training the model and saving the trained model for future predictions.
+---
 
-### 3. `test.py`
-This script is used to test and evaluate the performance of the trained model. It includes:
-- Loading the trained model and test data.
-- Generating predictions for the test dataset.
-- Calculating accuracy metrics to assess the model's performance.
+## Project Components
 
-## Datasets
-- **Disorders Folder**: Contains detailed information on various genetic disorders, symptoms, and their impact on physical health.
-- **Exercises Dataset**: Lists exercises and the muscle groups they target.
-- **Symptoms Dataset**: Links symptoms to relevant genetic disorders.
-- **Genetic Data**: Contains genetic information of individuals, used for training and testing the model.
+### Scripts
+1. **`preprocess.py`**
+   - Cleans, encodes, and formats datasets containing genetic data, symptoms, and exercise details.
+   - Ensures consistency across datasets by handling missing values and standardizing formats.
+   - Creates features required for effective model training.
 
-## How to Run the Project
-1. Clone the repository to your local machine:<br>
-  git clone https://github.com/Sameerbeedi/Genes-to-Gyms.git
+2. **`train.py`**
+   - Loads preprocessed data and constructs an LSTM-based neural network model.
+   - Trains the model to predict suitable exercises based on genetic and symptomatic input.
+   - Saves the trained model for future use.
 
-2. Navigate to the project directory:<br>
-  `cd Genes-to-Gyms`
+3. **`test.py`**
+   - Evaluates the trained model's performance using test datasets.
+   - Generates predictions and computes performance metrics, including accuracy, precision, and recall.
 
- 3.Run the preprocessing script to prepare the data:<br>
-  `python preeprocess.py`
+---
 
-4. Train the model using the `train.py` script:<br>
-  python train.py
+### Datasets
+- **Genetic Data**: Individual-specific genetic profiles used as inputs for training and testing.
+- **Symptoms Dataset**: Maps symptoms to genetic disorders, forming part of the feature set.
+- **Exercises Dataset**: Catalogs exercises with their associated muscle groups and benefits.
+- **Disorders Folder**: Comprehensive repository detailing genetic disorders, symptoms, and their health impacts.
 
-5. Test the model's performance using the `test.py` script:<br>
-  python test.py
+---
 
-## Dependencies
-Ensure that the following Python libraries are installed:
-- `pandas`
-- `numpy`
-- `scikit-learn`
-- `tensorflow`
-- `keras`
+## Installation and Setup
 
-Install dependencies using:
-pip install -r requirements.txt
+### Prerequisites
+Ensure that the following tools and libraries are installed:
+- Python 3.8 or later
+- Libraries: `pandas`, `numpy`, `scikit-learn`, `tensorflow`, `keras`
+
+### Steps to Set Up
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Sameerbeedi/Genes-to-Gyms.git
+   cd Genes-to-Gyms
+   ```
+
+2. **Install Dependencies**:
+   Use the provided requirements file to install necessary libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Prepare the Data**:
+   Run the preprocessing script to clean and encode the datasets:
+   ```bash
+   python preprocess.py
+   ```
+
+4. **Train the Model**:
+   Train the LSTM model using the cleaned data:
+   ```bash
+   python train.py
+   ```
+
+5. **Test the Model**:
+   Evaluate the model’s accuracy and performance metrics:
+   ```bash
+   python test.py
+   ```
+
+---
 
 ## Contribution
-Feel free to contribute to the project by raising issues or submitting pull requests. Make sure to follow the coding guidelines and provide appropriate documentation for any new features or bug fixes.
-
+Major contributions by:
+Sripriya Addanki: [sripriya204](https://github.com/sripriya204)
+Rohan Anantapur: [rohan0201](https://github.com/rohan0201)
+Sameer Beedi: [Sameerbeedi](https://github.com/Sameerbeedi)
+---
