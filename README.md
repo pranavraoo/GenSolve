@@ -72,9 +72,9 @@ Ensure that the following tools and libraries are installed:
 
 ---
 
-## Contribution
+### Contribution
 Major contributions by:
-Sripriya Addanki: [sripriya204](https://github.com/sripriya204)
-Rohan Anantapur: [rohan0201](https://github.com/rohan0201)
-Sameer Beedi: [Sameerbeedi](https://github.com/Sameerbeedi)
+- [Sripriya Addanki](https://github.com/sripriya204)
+- [Rohan Anantapur](https://github.com/rohan0201)
+- [Sameer Beedi](https://github.com/Sameerbeedi)
 ---
