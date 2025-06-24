@@ -42,7 +42,7 @@ Ensure that the following tools and libraries are installed:
 ### Steps to Set Up
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Sameerbeedi/Genes-to-Gyms.git
+   git clone https://github.com/pranavraoo/GenSolve.git
    cd Genes-to-Gyms
    ```
 
